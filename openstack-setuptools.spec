@@ -4,7 +4,7 @@
 #
 Name     : openstack-setuptools
 Version  : 40.6.2
-Release  : 137
+Release  : 138
 URL      : https://files.pythonhosted.org/packages/b0/d1/8acb42f391cba52e35b131e442e80deffbb8d0676b93261d761b1f0ef8fb/setuptools-40.6.2.zip
 Source0  : https://files.pythonhosted.org/packages/b0/d1/8acb42f391cba52e35b131e442e80deffbb8d0676b93261d761b1f0ef8fb/setuptools-40.6.2.zip
 Summary  : Easily download, build, install, upgrade, and uninstall Python packages
@@ -66,11 +66,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547905640
+export SOURCE_DATE_EPOCH=1547906906
 python3.6 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1547905640
+export SOURCE_DATE_EPOCH=1547906906
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstack-setuptools
 cp LICENSE %{buildroot}/usr/share/package-licenses/openstack-setuptools/LICENSE
@@ -84,7 +84,7 @@ echo ----[ mark ]----
 
 %files bin
 %defattr(-,root,root,-)
-/usr/bin/easy_install
+%exclude /usr/bin/easy_install
 /usr/bin/easy_install-3.6
 
 %files license
