@@ -4,7 +4,7 @@
 #
 Name     : openstack-setuptools
 Version  : 40.6.2
-Release  : 139
+Release  : 140
 URL      : https://files.pythonhosted.org/packages/b0/d1/8acb42f391cba52e35b131e442e80deffbb8d0676b93261d761b1f0ef8fb/setuptools-40.6.2.zip
 Source0  : https://files.pythonhosted.org/packages/b0/d1/8acb42f391cba52e35b131e442e80deffbb8d0676b93261d761b1f0ef8fb/setuptools-40.6.2.zip
 Summary  : Easily download, build, install, upgrade, and uninstall Python packages
