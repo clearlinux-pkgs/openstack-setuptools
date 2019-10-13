@@ -1,5 +1,5 @@
 PKG_NAME := openstack-setuptools
-URL = https://files.pythonhosted.org/packages/b0/d1/8acb42f391cba52e35b131e442e80deffbb8d0676b93261d761b1f0ef8fb/setuptools-40.6.2.zip
+URL = https://files.pythonhosted.org/packages/f4/d5/a6c19dcbcbc267aca376558797f036d9bcdff344c9f785fe7d0fe9a5f2a7/setuptools-41.4.0.zip
 ARCHIVES = 
 
 include ../common/Makefile.common
