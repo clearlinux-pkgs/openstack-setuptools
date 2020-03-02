@@ -4,7 +4,7 @@
 #
 Name     : openstack-setuptools
 Version  : 45.2.0
-Release  : 153
+Release  : 154
 URL      : https://files.pythonhosted.org/packages/68/75/d1d7b7340b9eb6e0388bf95729e63c410b381eb71fe8875cdfd949d8f9ce/setuptools-45.2.0.zip
 Source0  : https://files.pythonhosted.org/packages/68/75/d1d7b7340b9eb6e0388bf95729e63c410b381eb71fe8875cdfd949d8f9ce/setuptools-45.2.0.zip
 Summary  : Easily download, build, install, upgrade, and uninstall Python packages
@@ -68,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581282908
+export SOURCE_DATE_EPOCH=1583192824
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -78,7 +78,7 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 python3.6 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1581282908
+export SOURCE_DATE_EPOCH=1583192824
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/openstack-setuptools
 cp %{_builddir}/setuptools-45.2.0/LICENSE %{buildroot}/usr/share/package-licenses/openstack-setuptools/a5234543d56e03c950c0080826b53a0cb97671af
